@@ -1,13 +1,14 @@
 "use client"
 
 import Link from 'next/link';
-import React, { useState } from 'react';
+import React, {  useState } from 'react';
 import { GiHamburgerMenu } from "react-icons/gi";
 
 
 const Navbar = () => {
 // state for color control of navlinks 
 const [currentNav,setCurrentNav]= useState("")
+
 // state for small device navlinks 
 const [showLinks,setShowLinks]= useState(false)
 // console.log(currentNav);
@@ -32,6 +33,8 @@ const [showLinks,setShowLinks]= useState(false)
       to:"#contact"
     },
   ]
+
+
   return (
     <nav className='  bg-gradient-to-t from-slate-300 via-stone-200 to-gray-200 h-16 flex items-center'>
       <div  className=' w-[90%] mx-auto flex justify-between'>
@@ -54,7 +57,9 @@ const [showLinks,setShowLinks]= useState(false)
             {navLinks?.map((links)=>(
               <Link key={links.to} className={`font-bold text-lg ${links.to == currentNav&&"text-green-500"} `} href={links.to}
              
-              ><button onClick={()=>setCurrentNav(links.to)}>{links.title}</button>
+              ><button
+               onClick={()=>setCurrentNav(links.to)}
+               >{links.title}</button>
               </Link>
             ))}
           </ul>
