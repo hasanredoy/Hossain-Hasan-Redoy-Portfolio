@@ -33,7 +33,7 @@ const [showLinks,setShowLinks]= useState(false)
     },
   ]
   return (
-    <nav className='  bg-gradient-to-t from-slate-200 via-stone-200 to-gray-200 h-16 flex items-center'>
+    <nav className='  bg-gradient-to-t from-slate-300 via-stone-200 to-gray-200 h-16 flex items-center'>
       <div  className=' w-[90%] mx-auto flex justify-between'>
         {/* logo  */}
      <div>

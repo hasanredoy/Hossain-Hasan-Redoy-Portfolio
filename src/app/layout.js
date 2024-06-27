@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
 
         {/* navbar  */}
-        <nav className=" shadow-2xl sticky top-0">
+        <nav className=" shadow-xl sticky top-0">
           <Navbar></Navbar>
         </nav>
         <div>

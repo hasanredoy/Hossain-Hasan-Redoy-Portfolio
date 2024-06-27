@@ -2,7 +2,7 @@ import Banner from "@/Components/Banner/Banner";
 
 export default function Home() {
   return (
-    <main >
+    <main className=" overflow-hidden" >
       {/* banner  */}
        <div>
         <Banner></Banner>
