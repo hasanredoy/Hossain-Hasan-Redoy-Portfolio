@@ -16,11 +16,14 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
 
         {/* navbar  */}
-        <nav className=" shadow-2xl">
+        <nav className=" shadow-2xl sticky top-0">
           <Navbar></Navbar>
         </nav>
         <div>
         {children}
+        </div>
+        <div>
+      
         </div>
       </body>
     </html>
