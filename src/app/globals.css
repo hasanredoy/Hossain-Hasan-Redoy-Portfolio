@@ -25,3 +25,8 @@
   box-shadow: 5px 5px rgb(93, 83, 83);
   transition: all 1s;
 }
+
+/* for make the scroll behavior smooth while sending user to another section by anchor tag */
+html{
+  scroll-behavior: smooth;
+}
