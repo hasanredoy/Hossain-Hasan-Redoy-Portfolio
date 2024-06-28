@@ -4,7 +4,7 @@ import { FaLinkedin ,FaGithub } from "react-icons/fa";
 
 const AboutMe = () => {
   return (
-    <div className=" my-20 bg-gray-600 p-4 lg:p-10">
+    <div className=" my-20 bg-neutral-800 p-4 lg:p-10">
       {/* about me text div  */}
       <div className="  text-white w-[95%] lg:w-[80%] mx-auto">
         <h1 className=" border-b-4 border-gray-900 mb-10 bg-slate-500 w-52 mx-auto text-3xl font-bold text-center shadow-lg shadow-slate-400">
@@ -28,9 +28,9 @@ const AboutMe = () => {
         </h4>
       </div>
       <div>
-        <hr className=" my-10" />
+        <hr  className=" border border-gray-500 my-10" />
         {/* about me education and courses  */}
-        <div className=" flex flex-col lg:flex-row justify-between mt-5 ">
+        <div className=" grid grid-cols-1 gap-20 md:grid-cols-2 lg:grid-cols-3 justify-between mt-5 ">
           {/* education  */}
           <div className=" text-white">
             <h1 className=" text-2xl font-bold text-white border-b border-gray-200">Education</h1>
@@ -46,8 +46,10 @@ const AboutMe = () => {
             <h3 className=" text-base mt-3">Duration: <span className=" font-bold">6 months</span></h3>
             <h3 className=" text-base mt-3">Certificate: <Link target="_blank" className=" hover:underline cursor-pointer font-bold" href={"https://drive.google.com/file/d/1o8PxGG-aBuwX1ifN6cI7v0tRaxibLb6w/view?usp=sharing"}>View</Link></h3>
           </div>
-          {/* get in touch   */}
-          <div>
+          {/* find me  */}
+          <div className=" lg:ml-20 md:col-span-2 lg:col-span-1 md:mx-auto lg:mx-0 md:text-center lg:text-start">
+          <h1 className=" border-b w-44  border-gray-200 font-bold text-2xl text-white">Find me on</h1>
+          <div className=" flex gap-5 md:justify-center lg:justify-start">
             {/* linkedin  */}
             <div>
               <Link target="_blank" href={"https://www.linkedin.com/in/hossain-hasan-redoy/"} > <button className=" text-5xl font-bold bg-white my-5"><FaLinkedin></FaLinkedin></button></Link>
@@ -56,6 +58,7 @@ const AboutMe = () => {
             <div>
             <Link target="_blank" href={"https://github.com/hasanredoy"} > <button className=" text-5xl font-bold bg-white my-5"><FaGithub></FaGithub></button></Link>
             </div>
+          </div>
           </div>
         </div>
       </div>
