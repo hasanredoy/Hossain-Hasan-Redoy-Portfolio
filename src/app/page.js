@@ -1,9 +1,8 @@
 "use client"
-import AboutMe from "@/Components/AboutMe/AboutMe";
-import Banner from "@/Components/Banner/Banner";
-import Navbar from "@/Components/Navbar/Navbar";
+import Main from "@/Components/main/Main";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
+
 
 
 export default function Home() {
@@ -17,16 +16,10 @@ export default function Home() {
 }, []);
 
   return (
+ 
     <main className=" element-smooth overflow-hidden" >
-          
-      {/* banner  */}
-       <div>
-        <Banner></Banner>
-       </div>
-      {/* About me   */}
-       <div  id="about">
-        <AboutMe></AboutMe>
-       </div>
+          <Main></Main>
     </main>
+
   );
 }
