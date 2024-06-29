@@ -28,7 +28,7 @@ const Skills = () => {
 
       {isFetching&&<LoadingSpinner></LoadingSpinner>}
       <div className=" grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 mt-10 gap-10 w-[80%] lg:w-[60%] mx-auto">{
-       isFetching||skills?.map(skill=><div className=" z-10" data-title={skill?.title} key={skill._id}>
+       isFetching||skills?.map(skill=><div className=" shadow-xl rounded-xl shadow-gray-400 " data-title={skill?.title} key={skill._id}>
            <Image   className=" bg-[#050505] text-white w-full h-full p-5 rounded-xl" src={skill.icon} width={80} height={80} alt={skill?.title}></Image>
         </div>)
         }</div>
