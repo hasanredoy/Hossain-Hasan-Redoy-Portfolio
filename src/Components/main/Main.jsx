@@ -7,6 +7,7 @@ import {
 import Banner from "../Banner/Banner";
 import AboutMe from "../AboutMe/AboutMe";
 import Skills from "../Skills/Skills";
+import Projects from "../Projects/Projects";
 
 const queryClient = new QueryClient();
 const Main = () => {
@@ -27,6 +28,10 @@ const Main = () => {
       {/* skills   */}
        <div  id="skills">
         <Skills></Skills>
+       </div>
+      {/* projects  */}
+       <div  id="projects">
+        <Projects></Projects>
        </div>
     </main>
     </QueryClientProvider>

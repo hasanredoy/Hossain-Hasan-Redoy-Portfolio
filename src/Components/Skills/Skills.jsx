@@ -10,8 +10,6 @@ const { default: axios } = require("axios")
 const axiosHook = useAxios()
 
 const Skills = () => {
-  // state for skills 
-
   // load skills using tanstack
   const {data:skills=[],isFetching}=useQuery({
     queryKey:['skills'],
