@@ -2,6 +2,7 @@ import connectDB from "@/lib/connectDB"
 import { NextResponse } from "next/server"
 
 // get all skills 
+// accessories
 export const GET=async()=>{
   const db = await connectDB()
   try {

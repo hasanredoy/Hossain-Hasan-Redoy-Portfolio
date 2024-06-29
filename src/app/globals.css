@@ -69,19 +69,26 @@ html {
   position: relative;
 }
 
-/* animate skill div  */
-.animateDiv {
-  transition: all 1s;
-  animation-name: rotateDiv;
-  animation-duration: 3s;
+
+
+.scroll{
+  height: 2px;
+  position: fixed;
+  top: 64px;
+  z-index: 9999;
+  width: 100%;
+  scale: 0 1;
+  transform-origin: left;
+  animation: scrollAnimation linear;
+  animation-timeline: scroll();
 }
-@keyframes rotateDiv {
-  from {
-    rotate: calc(45deg);
-    margin-left: 100px;
-  }
-  to {
-    rotate: calc(0deg);
-    margin-left: 0px;
+@keyframes scrollAnimation{
+  to{scale:1 1;}
+}
+@keyframes scrollAnimation{
+  10%{background-color: red;}
+  40%{background-color: yellow;}
+  70%{background-color: green;}
+  100%{  background: linear-gradient(to right ,red , yellow,green) ;
   }
 }
