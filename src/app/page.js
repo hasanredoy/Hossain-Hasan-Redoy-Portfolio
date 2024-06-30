@@ -1,9 +1,16 @@
 "use client"
-import Main from "@/Components/main/Main";
+import AboutMe from "@/Components/AboutMe/AboutMe";
+import Banner from "@/Components/Banner/Banner";
+import ContactMe from "@/Components/ContactMe/ContactMe";
+import Footer from "@/Components/Footer/Footer";
+import Projects from "@/Components/Projects/Projects";
+import Skills from "@/Components/Skills/Skills";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 
 
+const queryClient = new QueryClient();
 
 export default function Home() {
   const router = useRouter()
@@ -17,9 +24,36 @@ export default function Home() {
 
   return (
  
+    <QueryClientProvider client={queryClient}>
+
     <main className=" element-smooth overflow-hidden" >
-          <Main></Main>
+          
+      {/* banner  */}
+       <div>
+        <Banner></Banner>
+       </div>
+      {/* about me  */}
+       <div  id="about">
+        <AboutMe></AboutMe>
+       </div>
+      {/* skills   */}
+       <div  id="skills">
+        <Skills></Skills>
+       </div>
+      {/* projects  */}
+       <div  id="projects">
+        <Projects></Projects>
+       </div>
+      {/* contact  */}
+       <div  id="contactMe">
+        <ContactMe></ContactMe>
+       </div>
+      {/* footer  */}
+       <div >
+        <Footer></Footer>
+       </div>
     </main>
+    </QueryClientProvider>
 
   );
 }
