@@ -7,7 +7,7 @@ const AboutMe = () => {
     <div className=" my-20 bg-neutral-800 p-4 lg:p-10">
       {/* about me text div  */}
       <div className="  text-white w-[95%] lg:w-[80%] mx-auto">
-        <h1 className=" border-b-4 border-gray-900 mb-10 bg-slate-500 w-52 mx-auto text-3xl font-bold text-center shadow-lg shadow-slate-400">
+        <h1 className=" border-b-4 border-gray-900 mb-10 bg-slate-500 w-52 mx-auto text-3xl font-black text-center shadow-lg shadow-slate-400">
           About Me{" "}
         </h1>
         <h4 className=" text-base lg:text-lg text-center lg:text-start">

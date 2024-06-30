@@ -7,7 +7,7 @@ const connectDB = async()=>{
   try {
     // get uri from env file 
     const uri = process.env.MONGODB_URI
-    console.log(uri);
+    // console.log(uri);
     // connect client 
     const client = new MongoClient(uri, {
       serverApi: {

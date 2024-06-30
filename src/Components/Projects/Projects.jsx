@@ -25,7 +25,7 @@ const Projects = () => {
     <div className=" my-20 container mx-auto">
       {/* text div  */}
       <div className=" mb-10">
-        <h1 className=" text-3xl lg:text-5xl font-bold w-80 text-center border-b-2 shadow-xl shadow-stone-500 mx-auto">
+        <h1 className=" text-3xl  font-black w-80 text-center border-b-2 shadow-xl shadow-stone-500 mx-auto">
           My Projects
         </h1>
       </div>
