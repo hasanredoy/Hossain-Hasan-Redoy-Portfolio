@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosHook = axios.create({
-  baseURL:"http://localhost:3000"
+  baseURL: process.env.Base_Url
 })
 const useAxios = () => {
   return axiosHook;
