@@ -38,39 +38,44 @@ const ContactMe = () => {
     <div className="bg-slate-800 p-5 lg:p-20 text-white my-20 lg:mt-40  ">
      
       {modal ? (
-        <div className="relative mx-auto flex flex-col items-center max-w-lg gap-4 p-6 rounded-md shadow-md sm:py-8 sm:px-12 bg-white text-black ">
+        <div className="relative mx-auto flex flex-col items-center max-w-lg gap-4 p-6 rounded-md sm:py-8 sm:px-12 bg-white text-black z-40 shadow-xl shadow-white">
         
           <h2 className="text-2xl font-semibold leading-tight tracking-wide">
             Thank You for contacting ..
           </h2>
-          <p className="flex-1 text-center ">
+          <p className="flex-1 text-center text-lg font-bold ">
             I will response as soon as possible.
           </p>
          
         </div>
       ) : (<>
-        <h1 className=" text-3xl font-black text-center w-80 mx-auto border-b shadow-lg mb-5 shadow-gray-500">
+        <h1 className=" text-3xl font-black text-center w-72 lg:w-80 mx-auto border-b shadow-lg mb-5 shadow-gray-500">
         Contact Me
       </h1>
-        <div className=" flex gap-5 mt-10 ">
+        <div className=" flex flex-col lg:flex-row gap-5 mt-10 ">
           {/* email and phone for contact */}
           <div className=" mt-5  flex-1 text-white flex flex-col  justify-center">
             <h4 className=" text-2xl font-bold">Contact Me Via</h4>
-            <h4 className=" text-lg font-bold flex items-center gap-3 my-5">
-              <IoIosMail className=" text-3xl"></IoIosMail>{" "}
+            <h4 className=" text-base lg:text-lg font-bold flex items-center gap-3 my-5">
+              <IoIosMail className=" text-xl lg:text-3xl"></IoIosMail>{" "}
               <span className=" hover:underline cursor-pointer ">
                 hossainhasanredoy@gamil.com
               </span>
             </h4>
-            <h4 className=" text-lg font-bold flex items-center gap-3 ">
-              <FaPhoneAlt className=" text-2xl"></FaPhoneAlt>{" "}
+            <h4 className=" text-base lg:text-lg font-bold flex items-center gap-3 ">
+              <FaPhoneAlt className=" text-xl lg:text-2xl"></FaPhoneAlt>{" "}
               <span className=" hover:underline cursor-pointer ">
                 +97156-4718381
               </span>
             </h4>
           </div>
-          <div className=" flex justify-center items-center px-10 text-xl font-bold text-white">
+          <div className=" lg:flex justify-center items-center px-10 text-xl font-bold text-white  hidden ">
             or
+          </div>
+          <div className=" flex w-full items-center min-w-full justify-between lg:hidden">
+          <hr  className=" text-white w-full border-2 lg:hidden" />
+          <h1 className=" mx-5">or</h1>
+          <hr className=" text-white w-full border-2 lg:hidden" />
           </div>
           {/* Contact form */}
           <div className=" flex-1 ">
@@ -79,7 +84,7 @@ const ContactMe = () => {
               onSubmit={handleMessage}
               className=" shadow-lg shadow-white p-5 mt-10"
             >
-              <h3 className=" text-center text-xl font-bold">
+              <h3 className=" text-center text-xl font-bold my-5">
                 Please Fill The Form
               </h3>
               {/* name input  */}

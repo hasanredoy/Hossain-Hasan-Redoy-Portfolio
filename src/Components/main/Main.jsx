@@ -9,6 +9,7 @@ import AboutMe from "../AboutMe/AboutMe";
 import Skills from "../Skills/Skills";
 import Projects from "../Projects/Projects";
 import ContactMe from "../ContactMe/ContactMe";
+import Footer from "../Footer/Footer";
 
 const queryClient = new QueryClient();
 const Main = () => {
@@ -34,9 +35,13 @@ const Main = () => {
        <div  id="projects">
         <Projects></Projects>
        </div>
-      {/* projects  */}
+      {/* contact  */}
        <div  id="contactMe">
         <ContactMe></ContactMe>
+       </div>
+      {/* footer  */}
+       <div >
+        <Footer></Footer>
        </div>
     </main>
     </QueryClientProvider>

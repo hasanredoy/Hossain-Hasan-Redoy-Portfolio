@@ -67,7 +67,7 @@ const Projects = () => {
                 <hr className=" my-5" />
                 <div>
                   <h3 className=" text-xl font-bold my-5"> Please Visit </h3>
-                  <div className=" grid grid-cols-2 md:grid-cols-3 gap-5 lg:gap-10 ">
+                  <div className=" grid grid-cols-2 md:grid-cols-3 gap-5 lg:gap-10 items-center md:pl-14 ">
                   <Link href={project?.live} target="_blank">
                   <button className=" flex gap-5 items-center bg-green-700 text-white font-bold rounded-lg px-3 py-2">Live Site <FaArrowUpRightFromSquare></FaArrowUpRightFromSquare></button></Link>
                   <Link href={project?.clientRepo} target="_blank">
