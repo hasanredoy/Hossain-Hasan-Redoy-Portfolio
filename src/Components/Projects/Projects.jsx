@@ -1,7 +1,6 @@
 "use client";
 
 import useAxios from "@/Hooks/useAxios";
-import { useQuery } from "@tanstack/react-query";
 import Image from "next/image";
 import LoadingSpinner from "../LoadingSpinner/LoadingSpinner";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
@@ -9,16 +8,14 @@ import { FaGithub } from "react-icons/fa";
 import Link from "next/link";
 
 const axiosHook = useAxios();
-const Projects = () => {
-  // load projects using tanstack
-  const { data: projects = [], isFetching } = useQuery({
-    queryKey: ["projects"],
-    queryFn: async () => {
-      const res = await axiosHook.get("/api/projects");
-      console.log(res.data);
-      return res.data.result;
-    },
-  });
+const loadProjects = async()=>{
+  const res = await axiosHook.get("/api/projects")
+  const projects =await res.data?.result
+  return projects
+}
+const Projects = async () => {
+  // load projects
+  const projects = await loadProjects()
   console.log(projects);
 
   return (
@@ -30,12 +27,10 @@ const Projects = () => {
         </h1>
       </div>
       {/* projects div  */}
-      {/* if data is fetching then return loading spinner  */}
-      {
-        isFetching&&<LoadingSpinner></LoadingSpinner>
-      }
+      {projects.length<0&&<LoadingSpinner></LoadingSpinner>}
       <div className="">
-        {isFetching || projects?.map((project,index) => {
+
+        {projects.length>0&&projects?.map((project,index) => {
           return (
             <div key={index} className={`flex my-20 p-5 gap-10 border-b shadow-xl shadow-stone-500 ${index%2==0?" flex-col lg:flex-row-reverse":" flex-col lg:flex-row"}`}>
               {/* image div  */}

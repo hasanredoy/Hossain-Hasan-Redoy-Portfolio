@@ -56,7 +56,7 @@ const [showLinks,setShowLinks]= useState(false)
             showLinks&& <ul className=' absolute top-16 border border-gray-400 rounded-md right-3 items-center shadow-2xl z-50 justify-center w-36 py-2 flex flex-col bg-slate-100 gap-5  '>
             {/* render all links by map  */}
             {navLinks?.map((links)=>(
-              <Link key={links.to} className={`font-bold text-lg ${links.to == currentNav&&"text-green-500"} `} href={links.to}
+              <Link key={links.to} className={`font-bold text-lg`} href={links.to}
              
               ><button
                onClick={()=>setCurrentNav(links.to)}
@@ -71,7 +71,7 @@ const [showLinks,setShowLinks]= useState(false)
           <ul className=' flex gap-5  '>
             {/* render all links by map  */}
             {navLinks?.map((links)=>(
-              <Link key={links.to} className={`font-bold text-lg ${links.to == currentNav&&"text-green-500"} `} href={links.to}
+              <Link key={links.to} className={`font-bold text-lg`} href={links.to}
              
               ><button onClick={()=>setCurrentNav(links.to)}>{links.title}</button>
               </Link>

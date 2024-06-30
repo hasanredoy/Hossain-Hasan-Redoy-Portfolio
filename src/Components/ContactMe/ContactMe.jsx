@@ -1,3 +1,5 @@
+"use client"
+
 import useAxios from "@/Hooks/useAxios";
 import axios from "axios";
 import { useState } from "react";
@@ -23,7 +25,7 @@ const ContactMe = () => {
       email,
       massage,
     };
-    console.log(fullMassage);
+    // console.log(fullMassage);
     axiosHook.post("/api/massage", fullMassage).then((res) => {
       if (res.data.result.insertedId) {
         // console.log("jello");
