@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* make  custom btn  */
+make  custom btn 
 .customBtn {
   background-color: rgb(1, 128, 1);
   color: white;
@@ -70,7 +70,7 @@ html {
   position: relative;
 }
 
-
+/* 
 
 .scroll{
   height: 4px;
@@ -91,4 +91,4 @@ html {
   70%{background-color: rgb(247, 85, 247);}
   100%{  background: rgb(255, 0, 170) ;
   }
-}
+} */

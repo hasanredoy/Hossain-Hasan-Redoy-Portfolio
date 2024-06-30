@@ -5,6 +5,7 @@ import ContactMe from "@/Components/ContactMe/ContactMe";
 import Footer from "@/Components/Footer/Footer";
 import Projects from "@/Components/Projects/Projects";
 import Skills from "@/Components/Skills/Skills";
+import "./globals.css"
 
 
 export default function Home() {
