@@ -30,7 +30,7 @@ const [showLinks,setShowLinks]= useState(false)
     },
     {
       title:"Contact",
-      to:"#contact"
+      to:"#contactMe"
     },
   ]
 
