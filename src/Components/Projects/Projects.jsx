@@ -6,18 +6,25 @@ import LoadingSpinner from "../LoadingSpinner/LoadingSpinner";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 const axiosHook = useAxios();
-const loadProjects = async()=>{
-  const res = await axiosHook.get("/api/projects")
-  const projects =await res.data?.result
-  return projects
-}
-const Projects = async () => {
-  // load projects
-  const projects = await loadProjects()
-  console.log(projects);
 
+const Projects = () => {
+ // loading state 
+const [isProjectsLoading, setProjectsLoading]=useState(false)
+// load skills 
+const [projects,setProjects]=useState([]) 
+useEffect(()=>{
+  setProjectsLoading(true)
+  axiosHook.get("/api/projects")
+  .then(res=>{
+  const projectsArr = res.data?.result
+  console.log(projectsArr);
+  setProjects(projectsArr)
+  setProjectsLoading(false)
+})
+},[])
   return (
     <div className=" my-20 container mx-auto">
       {/* text div  */}
@@ -27,10 +34,10 @@ const Projects = async () => {
         </h1>
       </div>
       {/* projects div  */}
-      {projects.length<0&&<LoadingSpinner></LoadingSpinner>}
+      {isProjectsLoading&&<LoadingSpinner></LoadingSpinner>}
       <div className="">
 
-        {projects.length>0&&projects?.map((project,index) => {
+        {isProjectsLoading||projects?.map((project,index) => {
           return (
             <div key={index} className={`flex my-20 p-5 gap-10 border-b shadow-xl shadow-stone-500 ${index%2==0?" flex-col lg:flex-row-reverse":" flex-col lg:flex-row"}`}>
               {/* image div  */}
@@ -63,12 +70,12 @@ const Projects = async () => {
                 <div>
                   <h3 className=" text-xl font-bold my-5"> Please Visit </h3>
                   <div className=" grid grid-cols-2 md:grid-cols-3 gap-5 lg:gap-10 items-center md:pl-14 ">
-                  <Link href={project?.live} target="_blank">
+                  <Link href={project?.live?project.live:''} target="_blank">
                   <button className=" flex gap-5 items-center bg-green-700 text-white font-bold rounded-lg px-3 py-2">Live Site <FaArrowUpRightFromSquare></FaArrowUpRightFromSquare></button></Link>
-                  <Link href={project?.clientRepo} target="_blank">
+                  <Link href={project?.clientRepo?project?.clientRepo:""} target="_blank">
                   <button className=" flex gap-5 items-center bg-gray-900 text-white font-bold rounded-lg px-3 py-2"><FaGithub className=" text-2xl"></FaGithub> Client</button>
                   </Link>
-                  <Link href={project?.serverRepo?project?.serverRepo:project?.clientRepo} target="_blank">
+                  <Link href={project?project?.serverRepo?project?.serverRepo:project?.clientRepo:''} target="_blank">
                   <button className=" flex gap-5 items-center bg-gray-900 text-white font-bold rounded-lg px-3 py-2"><FaGithub className=" text-2xl"></FaGithub> Server</button>
                   
                   </Link>

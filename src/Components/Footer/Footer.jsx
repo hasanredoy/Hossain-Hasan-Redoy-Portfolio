@@ -29,14 +29,14 @@ const Footer = () => {
    <ul className=' flex gap-2 justify-center lg:justify-start lg:gap-5  '>
             {/* render all links by map  */}
             {navLinks?.map((links)=>(
-              <Link key={links.to} className={`font-bold text-base lg:text-lg `} href={links.to}
+              <Link key={links.to} className={`font-bold text-base lg:text-lg `} href={links.to||""}
              
               ><button >{links.title}</button>
               </Link>
             ))}
           </ul>
           <hr className=" my-5  border-2 border-gray-600" />
-          <h4 className=" text-lg font-semibold">Copy right 2024 | Frontend Developer -- Hossain Hasan Redoy</h4>
+          <h4 className=" text-base lg:text-lg font-semibold text-center lg:text-start">Copy right 2024 | Frontend Developer -- Hossain Hasan Redoy</h4>
    </div>
       <div className="flex flex-col justify-center pt-6 lg:pt-0 ">
        <h1 className=" text-xl font-semibold text-center mb-3 border-b border-gray-800"> My Social Links</h1>
@@ -51,7 +51,7 @@ const Footer = () => {
           <h3><FaFacebook className="text-4xl "></FaFacebook></h3>
           </Link>
         </div>
-        <h1 className=" flex gap-2 text-lg font-semibold text-center mt-8 border-t border-gray-800">Project <Link href={"https://github.com/hasanredoy/Hossain-Hasan-Redoy-Portfolio"} className=" font-bold text-blue-500 flex gap-2 items-center">Source <FaArrowUpRightFromSquare></FaArrowUpRightFromSquare></Link></h1>
+        <h1 className=" flex gap-2 text-center lg:text-start text-base lg:text-lg font-semibold justify-center lg:justify-start pt-5 mt-8 ">Project <Link href={"https://github.com/hasanredoy/Hossain-Hasan-Redoy-Portfolio"} className=" font-bold text-blue-500 flex gap-2 items-center">Source <FaArrowUpRightFromSquare></FaArrowUpRightFromSquare></Link></h1>
       </div>
     </div>
   </footer>
