@@ -1,6 +1,6 @@
 import { Inter, Roboto_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar/Navbar";
+import Navbar from "@/Components/Navbar/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 const roboto_mono = Roboto_Mono({ subsets: ["latin"] });

@@ -1,12 +1,12 @@
 export const dynamic = "force-dynamic"
 
-import Banner from "@/components/Banner/Banner";
+import Banner from "@/Components/Banner/Banner";
 import "./globals.css"
-import AboutMe from "@/components/AboutMe/AboutMe";
-import Skills from "@/components/Skills/Skills";
-import Projects from "@/components/Projects/Projects";
-import ContactMe from "@/components/ContactMe/ContactMe";
-import Footer from "@/components/Footer/Footer";
+import AboutMe from "@/Components/AboutMe/AboutMe";
+import Skills from "@/Components/Skills/Skills";
+import Projects from "@/Components/Projects/Projects";
+import ContactMe from "@/Components/ContactMe/ContactMe";
+import Footer from "@/Components/Footer/Footer";
 
 
 export default function Home() {
