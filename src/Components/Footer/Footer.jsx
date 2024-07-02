@@ -51,7 +51,7 @@ const Footer = () => {
           <h3><FaFacebook className="text-4xl "></FaFacebook></h3>
           </Link>
         </div>
-        <h1 className=" flex gap-2 text-center lg:text-start text-base lg:text-lg font-semibold justify-center lg:justify-start pt-5 mt-8 ">Project <Link href={"https://github.com/hasanredoy/Hossain-Hasan-Redoy-Portfolio"} className=" font-bold text-blue-500 flex gap-2 items-center">Source <FaArrowUpRightFromSquare></FaArrowUpRightFromSquare></Link></h1>
+    
       </div>
     </div>
   </footer>

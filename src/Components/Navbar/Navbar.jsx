@@ -36,15 +36,15 @@ const [showLinks,setShowLinks]= useState(false)
 
 
   return (
-    <nav className='  bg-gradient-to-t from-slate-300 via-stone-200 to-gray-200 h-16 flex items-center'>
+    <nav className='  bg-gray-100 bg-opacity-60 h-16 flex items-center'>
       <div className='scroll '></div>
       <div  className=' w-[90%] mx-auto flex justify-between'>
         {/* logo  */}
      <div>
      <h1 className=' w-36 text-2xl font-bold gap-x-0 relative '><span className='  '>H</span> H {" "}
-       <span className='pr-3 text-green-600 '>{"Redo"}</span>
-        <span className=' text-yellow-500 top-2 right-5 text-4xl absolute'>{"`"}</span>
-        <span className=' text-green-600 absolute top-1.5 right-4'>{"/"}</span>
+       <span className='pr-3 '>{"Redo"}</span>
+        <span className=' top-2 right-5 text-4xl absolute'>{"`"}</span>
+        <span className='  absolute top-1.5 right-4'>{"/"}</span>
         </h1>
      </div>
         

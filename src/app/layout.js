@@ -18,10 +18,10 @@ export default function RootLayout({ children }) {
       </head>
       <body className={inter.className}>
         {/* navbar  */}
-        <nav className=" shadow-xl sticky z-50 top-0">
+        <nav className=" shadow-xl ">
           <Navbar></Navbar>
         </nav>
-        <div>{children}</div>
+        <div className=" container mx-auto">{children}</div>
         <div></div>
       </body>
     </html>
