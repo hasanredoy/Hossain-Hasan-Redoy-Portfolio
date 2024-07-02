@@ -4,7 +4,7 @@
 
 /* make  custom btn  */
 .customBtn {
-  background-color: rgb(1, 128, 1);
+  background-color: #018001;
   color: white;
   padding: 5px 15px;
   font-size: 20px;
@@ -13,12 +13,12 @@
   
 }
 .customBtn:hover {
-  background-color: rgb(245, 246, 245);
+  background-color: #0c0c0c;
   color: rgb(4, 171, 7);
   padding: 5px 15px;
   font-size: 20px;
   font-weight: bold;
-  border-radius: 5px;
+  border-radius: 10px;
   transition: all 0.2s;
 }
 

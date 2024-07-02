@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
         <nav className=" shadow-xl ">
           <Navbar></Navbar>
         </nav>
-        <div className=" container mx-auto">{children}</div>
+        <div className=" w-[95%] lg:w-[85%] mx-auto">{children}</div>
         <div></div>
       </body>
     </html>
