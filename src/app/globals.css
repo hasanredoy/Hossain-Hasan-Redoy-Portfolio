@@ -2,21 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
-/* make  custom btn  */
-.customBtn {
+/* make  custom btn primary */
+.Btn-Primary {
   background-color: #018001;
   color: white;
-  padding: 5px 15px;
-  font-size: 20px;
+  padding: 10px 15px;
+  font-size: 17px;
   font-weight: bold;
   border-radius: 10px;
   
 }
-.customBtn:hover {
-  background-color: #0c0c0c;
+.Btn-Primary:hover {
+  background-color: #f8eaea;
   color: rgb(4, 171, 7);
-  padding: 5px 15px;
-  font-size: 20px;
+  padding: 10px 15px;
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: all 0.2s;
+}
+/* make  custom btn secondary  */
+.Btn-Secondary {
+  background-color: #131413;
+  color: white;
+  padding: 10px 15px;
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 10px;
+  
+}
+.Btn-Secondary:hover {
+  background-color: #ebe1e1;
+  color: rgb(13, 13, 13);
+  padding: 10px 15px;
+  font-size: 17px;
   font-weight: bold;
   border-radius: 10px;
   transition: all 0.2s;
@@ -87,5 +106,45 @@ html {
   10%{background-color: rgb(254, 82, 202);}
   70%{background-color: rgb(247, 85, 247);}
   100%{  background: rgb(255, 0, 170) ;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Btn-Primary {
+    background-color: #018001;
+    color: white;
+    padding: 10px 15px;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 10px;
+    
+  }
+  .Btn-Primary:hover {
+    background-color: #f8eaea;
+    color: rgb(4, 171, 7);
+    padding: 10px 15px;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 10px;
+    transition: all 0.2s;
+  }
+  /* make  custom btn secondary  */
+  .Btn-Secondary {
+    background-color: #131413;
+    color: white;
+    padding: 10px 15px;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 10px;
+    
+  }
+  .Btn-Secondary:hover {
+    background-color: #ebe1e1;
+    color: rgb(13, 13, 13);
+    padding: 10px 15px;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 10px;
+    transition: all 0.2s;
   }
 }

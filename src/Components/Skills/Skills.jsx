@@ -10,7 +10,7 @@ const axiosHook = useAxios()
 
 const Skills = () => {
 // loading state 
-const [isSkillsLoading, setSkillsLoading]=useState(false)
+const [isSkillsLoading, setSkillsLoading]=useState(true)
   // load skills 
 const [skills,setSkills]=useState([]) 
   useEffect(()=>{
@@ -24,14 +24,14 @@ const [skills,setSkills]=useState([])
   })
   },[])
   return (
-    <div className=" my-40">
-      <h1 className=" text-3xl  text-center border-b-2 border-gray-400 shadow-lg shadow-gray-400 font-black w-60 mx-auto">My Skills</h1>
+    <div className=" mt-32">
+      <h1 className=" border-b-2 border-gray-900 mb-10 w-52 mx-auto text-3xl font-black text-center shadow-lg shadow-slate-400">My Skills</h1>
 
-      <h4 className=" text-lg mt-8 lg:text-xl font-bold text-center ">Here are the technologies I work with.</h4>
+      <h4 className=" text-lg my-8 lg:text-xl font-bold text-center ">Here are the technologies I work with.</h4>
 
       {isSkillsLoading&&<LoadingSpinner></LoadingSpinner>}
-      <div className=" grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 mt-10 gap-10 w-[80%] lg:w-[60%] mx-auto">{isSkillsLoading||skills?.map(skill=><div className=" shadow-xl rounded-xl shadow-gray-400 " data-title={skill?.title} key={skill._id}>
-           <Image   className=" bg-[#050505] text-white w-full h-full p-5 rounded-xl" src={skill.icon} width={80} height={80} alt={skill?.title}></Image>
+      <div className=" grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 mt-10 gap-5 lg:gap-10 w-[90%] justify-center items-center text-center lg:w-[60%] mx-auto">{isSkillsLoading||skills?.map(skill=><div className=" rounded-lg mx-auto  " key={skill._id}>
+           <Image   className=" bg-[#050505]  p-3 hover:scale-105 rounded-xl lg:w-20 lg:h-20" src={skill.icon}  width={80} height={80} alt={skill?.title}></Image>
         </div>)
         }</div>
     </div>

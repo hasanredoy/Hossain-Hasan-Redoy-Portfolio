@@ -37,7 +37,7 @@ const ContactMe = () => {
     });
   };
   return (
-    <div className="bg-slate-800 p-5 lg:p-20 text-white my-20 lg:mt-40  ">
+    <div className="my-32  ">
      
       {modal ? (
         <div className="relative mx-auto flex flex-col items-center max-w-lg gap-4 p-6 rounded-md sm:py-8 sm:px-12 bg-white text-black z-40 shadow-xl shadow-white">
@@ -51,12 +51,12 @@ const ContactMe = () => {
          
         </div>
       ) : (<>
-        <h1 className=" text-3xl font-black text-center w-72 lg:w-80 mx-auto border-b shadow-lg mb-5 shadow-gray-500">
+        <h1 className=" border-b-2 border-gray-900 mb-10 w-52 mx-auto text-3xl font-black text-center shadow-lg shadow-slate-400 ">
         Contact Me
       </h1>
         <div className=" flex flex-col lg:flex-row gap-5 mt-10 ">
           {/* email and phone for contact */}
-          <div className=" mt-5  flex-1 text-white flex flex-col  justify-center">
+          <div className=" mt-5  flex-1">
             <h4 className=" text-2xl font-bold">Contact Me Via</h4>
             <h4 className=" text-base lg:text-lg font-bold flex items-center gap-3 my-5">
               <IoIosMail className=" text-xl lg:text-3xl"></IoIosMail>{" "}
@@ -71,20 +71,20 @@ const ContactMe = () => {
               </span>
             </h4>
           </div>
-          <div className=" lg:flex justify-center items-center px-10 text-xl font-bold text-white  hidden ">
+          <div className=" lg:flex justify-center items-center px-10 text-xl font-bold   hidden ">
             or
           </div>
           <div className=" flex w-full items-center min-w-full justify-between lg:hidden">
-          <hr  className=" text-white w-full border-2 lg:hidden" />
+          <hr  className="  w-full border-2 lg:hidden" />
           <h1 className=" mx-5">or</h1>
-          <hr className=" text-white w-full border-2 lg:hidden" />
+          <hr className="  w-full border-2 lg:hidden" />
           </div>
           {/* Contact form */}
           <div className=" flex-1 ">
-            <h3 className=" text-2xl font-bold">Send Me Massage</h3>
+            <h3 className=" text-2xl font-bold mt-4">Send Me Massage</h3>
             <form
               onSubmit={handleMessage}
-              className=" shadow-lg shadow-white p-5 mt-10"
+              className=" border shadow-lg shadow-white px-5 pb-5 mt-10"
             >
               <h3 className=" text-center text-xl font-bold my-5">
                 Please Fill The Form
@@ -128,7 +128,7 @@ const ContactMe = () => {
                   rows={4}
                 />
               </div>
-              <button className="mx-auto mt-5 flex items-center gap-2 bg-slate-400 text-black font-bold px-4 py-2 rounded">
+              <button className="mx-auto mt-5 flex items-center gap-2 Btn-Primary">
                 Send <FaLocationArrow></FaLocationArrow>
               </button>
             </form>

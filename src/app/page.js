@@ -37,10 +37,7 @@ export default function Home() {
        <div  id="contactMe">
         <ContactMe></ContactMe>
        </div>
-      {/* footer  */}
-       <div >
-        <Footer></Footer>
-       </div>
+     
     </main>
 
   );

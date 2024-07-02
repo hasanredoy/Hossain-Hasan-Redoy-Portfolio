@@ -1,6 +1,7 @@
 import { Inter, Roboto_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/Components/Navbar/Navbar";
+import Footer from "@/Components/Footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 const roboto_mono = Roboto_Mono({ subsets: ["latin"] });
@@ -22,7 +23,10 @@ export default function RootLayout({ children }) {
           <Navbar></Navbar>
         </nav>
         <div className=" w-[95%] lg:w-[85%] mx-auto">{children}</div>
-        <div></div>
+         {/* footer  */}
+       <div className="" >
+        <Footer></Footer>
+       </div>
       </body>
     </html>
   );
