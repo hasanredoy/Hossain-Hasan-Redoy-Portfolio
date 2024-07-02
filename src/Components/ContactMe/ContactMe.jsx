@@ -40,7 +40,7 @@ const ContactMe = () => {
     <div className="my-32  ">
      
       {modal ? (
-        <div className="relative mx-auto flex flex-col items-center max-w-lg gap-4 p-6 rounded-md sm:py-8 sm:px-12 bg-white text-black z-40 shadow-xl shadow-white">
+        <div className="relative mx-auto flex flex-col items-center max-w-lg gap-4 p-6 rounded-md sm:py-8 sm:px-12 bg-gray-200 text-black z-40 shadow-xl shadow-white border-2 border-gray-400">
         
           <h2 className="text-2xl font-semibold leading-tight tracking-wide">
             Thank You for contacting ..
