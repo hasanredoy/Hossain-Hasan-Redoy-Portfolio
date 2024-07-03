@@ -24,7 +24,7 @@ const Footer = () => {
   ]
   return (
     <footer className="bg-gray-200 ">
-    <div className="w-[95%] lg:w-[85%] flex justify-between flex-col  mx-auto pt-5 lg:flex-row divide-gray-300">
+    <div className="w-[95%] lg:w-[85%] flex justify-between flex-col  mx-auto py-5 lg:flex-row divide-gray-300">
    <div>
    <ul className=' flex gap-4 justify-center lg:justify-start lg:gap-5  '>
             {/* render all links by map  */}
