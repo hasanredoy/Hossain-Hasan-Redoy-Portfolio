@@ -29,17 +29,17 @@ const Footer = () => {
    <ul className=' flex gap-2 justify-center lg:justify-start lg:gap-5  '>
             {/* render all links by map  */}
             {navLinks?.map((links)=>(
-              <Link key={links.to} className={`font-bold text-base lg:text-lg hover:scale-105 hover:text-green-500`} href={links.to||""}
+              <Link key={links.to} className={`font-bold text-base lg:text-lg hover:scale-105 hover:text-[#f98407]`} href={links.to||""}
              
               ><button >{links.title}</button>
               </Link>
             ))}
           </ul>
-          <hr className=" my-5  border border-gray-500" />
+          <hr className=" my-5  border border-gray-300" />
           <h4 className=" text-base font-semibold text-center lg:text-start">Copy right 2024 | Frontend Developer -- Hossain Hasan Redoy</h4>
    </div>
       <div className="flex flex-col pt-6 lg:pt-0 ">
-       <h1 className=" text-xl font-semibold text-center mb-3 border-b border-gray-800"> My Social Links</h1>
+       <h1 className=" text-xl font-semibold text-center mb-3 border-b border-gray-300"> My Social Links</h1>
         <div className="flex justify-center space-x-4">
           <Link href={"https://www.linkedin.com/in/hossain-hasan-redoy/"}>
           <h3><FaLinkedin className="text-4xl "></FaLinkedin></h3>

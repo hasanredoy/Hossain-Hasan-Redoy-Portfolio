@@ -4,7 +4,7 @@
 
 /* make  custom btn primary */
 .Btn-Primary {
-  background-color: #018001;
+  background-color: #f98407;
   color: white;
   padding: 10px 15px;
   font-size: 17px;
@@ -14,7 +14,7 @@
 }
 .Btn-Primary:hover {
   background-color: #f8eaea;
-  color: rgb(4, 171, 7);
+  color: #f98407;
   padding: 10px 15px;
   font-size: 17px;
   font-weight: bold;

@@ -29,7 +29,7 @@ useEffect(()=>{
     <div className=" mt-32 ">
       {/* text div  */}
       <div className=" mb-10">
-        <h1 className=" border-b-2 border-gray-900 mb-10 w-52 mx-auto text-3xl font-black text-center shadow-lg shadow-slate-400">
+        <h1 className=" border-b-2 border-gray-900 mb-10 w-52 mx-auto text-2xl lg:text-3xl font-black text-center shadow-lg shadow-slate-400">
           My Projects
         </h1>
       </div>
@@ -42,7 +42,7 @@ useEffect(()=>{
             <div key={index} className={` pb-5 flex    gap-10 border-b shadow-lg shadow-stone-500 flex-col  border-y border-gray-600 p-3 rounded-lg bg-gray-50  mb-14`}>
               {/* image div  */}
               <div className="">
-                <Image className=" w-full" width={500} height={700} src={project?.image} alt={project?.title}></Image>
+                <Image className=" w-[90%] md:w-[80%] lg:w-[60%] mx-auto" width={500} height={700} src={project?.image} alt={project?.title}></Image>
               </div>
               {/* text div */}
               <div className=" flex-1">
@@ -57,10 +57,10 @@ useEffect(()=>{
                 </div>
               {/* technologies div  */}
               <h3 className=" text-xl font-bold mb-5">Techs I used</h3>
-                <div className=" grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5   gap-y-2 lg:gap-y-5  gap-x-3 lg:gap-x-10">
+                <div className=" grid grid-cols-2 md:grid-cols-5 lg:grid-cols-8 xl:grid-cols-8   gap-y-2 lg:gap-y-5  gap-x-3 ">
                   {project?.techs?.map(tech=>{
                     return <div key={tech}>
-                      <button className=" bg-stone-900 text-white text-sm p-1  rounded-md w-full ">{tech}</button>
+                      <h3 className=" bg-[#575550] text-white text-sm p-1 text-center  rounded-md w-full ">{tech}</h3>
                     </div>
                   })}
                 </div>
