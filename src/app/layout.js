@@ -1,9 +1,8 @@
-import { Inter, Roboto_Mono } from "next/font/google";
+import { Roboto_Mono} from "next/font/google";
 import "./globals.css";
 import Navbar from "@/Components/Navbar/Navbar";
 import Footer from "@/Components/Footer/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
 const roboto_mono = Roboto_Mono({ subsets: ["latin"] });
 
 export const metadata = {
@@ -17,7 +16,7 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="shortcut icon" href="./favicon.jpg" />
       </head>
-      <body className={inter.className}>
+      <body className={`${roboto_mono.className} bg-slate-100 `}>
         {/* navbar  */}
         <nav className=" shadow-xl ">
           <Navbar></Navbar>

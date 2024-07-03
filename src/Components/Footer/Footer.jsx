@@ -23,10 +23,10 @@ const Footer = () => {
     },
   ]
   return (
-    <footer className="bg-gray-100 ">
-    <div className="w-[95%] lg:w-[85%] flex justify-between flex-col p-4 mx-auto md:p-8 lg:flex-row divide-gray-300">
+    <footer className="bg-gray-200 ">
+    <div className="w-[95%] lg:w-[85%] flex justify-between flex-col  mx-auto pt-5 lg:flex-row divide-gray-300">
    <div>
-   <ul className=' flex gap-2 justify-center lg:justify-start lg:gap-5  '>
+   <ul className=' flex gap-4 justify-center lg:justify-start lg:gap-5  '>
             {/* render all links by map  */}
             {navLinks?.map((links)=>(
               <Link key={links.to} className={`font-bold text-base lg:text-lg hover:scale-105 hover:text-[#f98407]`} href={links.to||""}

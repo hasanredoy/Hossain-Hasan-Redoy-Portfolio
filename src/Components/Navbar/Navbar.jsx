@@ -41,10 +41,10 @@ const [showLinks,setShowLinks]= useState(false)
       <div  className=' w-[95%] lg:w-[85%] mx-auto flex justify-between'>
         {/* logo  */}
      <div>
-     <h1 className=' hover:scale-105 hover:bg-green-100 cursor-pointer w-36 text-2xl font-bold gap-x-0 relative '><span className='  '>H</span> H {" "}
+     <h1 className=' hover:scale-105 cursor-pointer w-36 text-2xl font-bold gap-x-0 relative '><span className='  '>H</span> H {" "}
        <span className='pr-3 '>{"Redo"}</span>
-        <span className=' top-2 right-5 text-4xl absolute'>{"`"}</span>
-        <span className='  absolute text-[#f98407] top-1.5 rotate-6 right-4'>{"/"}</span>
+        <span className=' top-2 right-3 text-4xl absolute'>{"`"}</span>
+        <span className='  absolute text-[#f98407] top-2 rotate-6 right-2'>{"/"}</span>
         </h1>
      </div>
         

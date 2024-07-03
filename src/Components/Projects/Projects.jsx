@@ -57,7 +57,7 @@ useEffect(()=>{
                 </div>
               {/* technologies div  */}
               <h3 className=" text-xl font-bold mb-5">Techs I used</h3>
-                <div className=" grid grid-cols-2 md:grid-cols-5 lg:grid-cols-8 xl:grid-cols-8   gap-y-2 lg:gap-y-5  gap-x-3 ">
+                <div className=" grid grid-cols-2 md:grid-cols-5 lg:grid-cols-7  gap-y-2 lg:gap-y-5  gap-x-3 ">
                   {project?.techs?.map(tech=>{
                     return <div key={tech}>
                       <h3 className=" bg-[#575550] text-white text-sm p-1 text-center  rounded-md w-full ">{tech}</h3>
@@ -71,7 +71,7 @@ useEffect(()=>{
                   <h3 className=" text-xl font-bold my-5"> Please Visit </h3>
                   <div className=" grid grid-cols-2  text-center  md:grid-cols-3 justify-center gap-3 w-full lg:w-[60%]  lg:gap-4 ">
                   <Link href={project?.live?project.live:''} target="_blank">
-                  <button className="  flex gap-5 items-center Btn-Primary">Live Site <FaArrowUpRightFromSquare></FaArrowUpRightFromSquare></button></Link>
+                  <button className="  flex gap-2 md:gap-5 items-center Btn-Primary">Live Site <FaArrowUpRightFromSquare></FaArrowUpRightFromSquare></button></Link>
                   <Link href={project?.clientRepo?project?.clientRepo:""} target="_blank">
                   <button className=" flex gap-5 items-center Btn-Secondary"><FaGithub className=" text-2xl"></FaGithub> Client</button>
                   </Link>
