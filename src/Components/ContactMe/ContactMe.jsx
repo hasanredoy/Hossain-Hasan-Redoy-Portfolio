@@ -1,18 +1,16 @@
 "use client";
 
-import useAxios from "@/Hooks/useAxios";
-import axios from "axios";
 import {
   FaFacebook,
   FaLinkedin,
   FaLocationArrow,
-  FaLongArrowAltRight,
   FaPhoneAlt,
 } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 import { useRef, useEffect, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Link from "next/link";
+import { FaLocationDot, FaLocationPin } from "react-icons/fa6";
 
 const ContactMe = () => {
   // handler for modal
@@ -65,7 +63,7 @@ const ContactMe = () => {
         </div>
       ) : (
         <>
-          <h1 className=" border-b-2 border-gray-900 mb-10 w-52 mx-auto text-2xl lg:text-3xl font-black text-center shadow-lg shadow-slate-400 ">
+          <h1 className=" border-b-2 border-gray-900 mb-10 w-56 px-2 mx-auto text-2xl lg:text-3xl font-black text-center shadow-lg shadow-slate-400 pb-1 ">
             Contact Me
           </h1>
           <div className=" flex flex-col lg:flex-row gap-5 mt-10 ">
@@ -84,6 +82,14 @@ const ContactMe = () => {
                   +97156-4718381
                 </span>
               </h4>
+              <h4 className=" text-base font-bold flex items-center gap-3 mt-4 ">
+                <FaLocationDot className=" text-xl"></FaLocationDot>{" "}
+                <span className=" hover:underline cursor-pointer ">
+                  Abu Dhabi, United Arab Emirates.
+                </span>
+              </h4>
+
+              
               <div className=" flex gap-5 mt-5">
               <Link href={"https://www.linkedin.com/in/hossain-hasan-redoy/"}>
           <h3><FaLinkedin className="text-4xl "></FaLinkedin></h3>

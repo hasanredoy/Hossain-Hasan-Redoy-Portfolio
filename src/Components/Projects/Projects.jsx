@@ -8,44 +8,81 @@ import { FaGithub } from "react-icons/fa";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
+import React, { useRef } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/free-mode';
+import 'swiper/css/navigation';
+import 'swiper/css/thumbs';
+// import required modules
+import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
+// import projects css 
+import './projects.css';
+
+
 const axiosHook = useAxios();
 
 const Projects = () => {
- // loading state 
-const [isProjectsLoading, setProjectsLoading]=useState(true)
-// load skills 
-const [projects,setProjects]=useState([]) 
-useEffect(()=>{
-  setProjectsLoading(true)
-  axiosHook.get("/api/projects")
-  .then(res=>{
-  const projectsArr = res.data?.result
-  console.log(projectsArr);
-  setProjects(projectsArr)
-  setProjectsLoading(false)
-})
-},[])
+
+  // swiper state 
+  const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  console.log(thumbsSwiper);
+  
+  // loading state 
+  const [isProjectsLoading, setProjectsLoading]=useState(true)
+  // load projects 
+  const [projects,setProjects]=useState([]) 
+  useEffect(()=>{
+    setProjectsLoading(true)
+    axiosHook.get("/api/projects")
+    .then(res=>{
+      const projectsArr = res.data?.result
+      console.log(projectsArr);
+      setProjects(projectsArr)
+      setProjectsLoading(false)
+    })
+  },[])
+
+  const sortedProjects = projects.sort((project1,project2)=>project1?.projectId+project2?.projectId)
+console.log(sortedProjects);
   return (
     <div className=" mt-32 ">
       {/* text div  */}
       <div className=" mb-10">
-        <h1 className=" border-b-2 border-gray-900 mb-10 w-52 mx-auto text-2xl lg:text-3xl font-black text-center shadow-lg shadow-slate-400">
+        <h1 className=" border-b-2 border-gray-900 mb-10 w-56 mx-auto text-2xl lg:text-3xl font-black text-center shadow-lg shadow-slate-400 pb-1 px-2">
           My Projects
         </h1>
       </div>
       {/* projects div  */}
       {isProjectsLoading&&<LoadingSpinner></LoadingSpinner>}
-      <div className="">
+      <div className=" ">
+{/* swiper  */}
 
-        {isProjectsLoading||projects?.map((project,index) => {
+      <Swiper 
+        style={{
+          '--swiper-navigation-color': '#000',
+          '--swiper-pagination-color': '#000',
+        }}
+        spaceBetween={10}
+        navigation={true}
+        thumbs={{ swiper: thumbsSwiper }}
+        modules={[FreeMode, Navigation, Thumbs]}
+        className="mySwiper2  "
+      >
+     {isProjectsLoading||projects?.map((project,index) => {
           return (
-            <div key={index} className={` pb-5 flex    gap-10 border-b shadow-lg shadow-stone-500 flex-col  border-y border-gray-600 p-3 rounded-lg bg-gray-50  mb-14`}>
+                 <SwiperSlide
+                  onClick={setThumbsSwiper}
+                 key={index} className={` pb-5 flex    gap-10 border-b shadow-lg shadow-stone-500 flex-col   p-3 rounded-lg bg-gray-50  h-full  justify-start mb-2`}>
               {/* image div  */}
               <div className="">
                 <Image className=" w-[90%] md:w-[80%] lg:w-[60%] mx-auto" width={500} height={700} src={project?.image} alt={project?.title}></Image>
               </div>
               {/* text div */}
-              <div className=" flex-1">
+              <div className=" flex-1 text-start justify-start px-10">
                 <h1 className=" text-xl md:text-2xl font-bold">{project?.title}</h1>
                 <p className=" my-5 text-sm md:text-base">{project?.description}</p>
                 {/* feature div  */}
@@ -84,9 +121,17 @@ useEffect(()=>{
 
 
               </div>
-            </div>
+            </SwiperSlide>
           );
         })}
+     
+      </Swiper>
+
+  
+
+
+
+        
       </div>
     </div>
   );

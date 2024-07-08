@@ -5,7 +5,7 @@ const AboutMe = () => {
   return (
     <div className=" mt-32  ">
       {/* about me text div  */}
-      <h1 className=" border-b-2 border-gray-900 mb-10 w-52 mx-auto text-2xl lg:text-3xl font-black text-center shadow-lg shadow-slate-400">
+      <h1 className=" border-b-2 border-gray-900 mb-10 w-52 mx-auto text-2xl lg:text-3xl font-black text-center shadow-lg shadow-slate-400 pb-1">
         About Me{" "}
       </h1>
       <section className="flex gap-5 flex-col lg:flex-row pt-10">

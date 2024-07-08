@@ -8,7 +8,7 @@ export const GET = async()=>{
   try {
     // get  projects collection
     const projectsCollection = await db.collection('projects')
-    const result = await projectsCollection.find().sort({index:1}).toArray()
+    const result = await projectsCollection.find().sort({projectId:1}).toArray()
     return NextResponse.json({result})
   } catch (error) {
     return NextResponse.json({error})
