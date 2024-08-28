@@ -11,7 +11,7 @@ const AboutMe = () => {
       <section className="flex gap-5 flex-col lg:flex-row pt-10">
         {/* text div  */}
         <div className=" w-full flex-1 lg:w-[60%] lg:pr-8  ">
-          <h4 className=" text-base md:text-lg font-medium">
+          <h4 className=" text-base  font-normal">
             Hey there , I am a frontend Web developer, passionate about
             development technologies and loves to create eye-catching beautiful
             responsive website.I can collaborate with any team and work
@@ -23,7 +23,7 @@ const AboutMe = () => {
               and MongoDB.
             </span>
           </h4>
-          <h4 className="  text-base md:text-lg   mt-3 font-medium">
+          <h4 className="  text-base   mt-3 font-normal">
             I am a quick learner who continuously learn and explore new
             technologies, to be stay forefront of the industry. My goal is to
             take new challenges and keep improving my skills.

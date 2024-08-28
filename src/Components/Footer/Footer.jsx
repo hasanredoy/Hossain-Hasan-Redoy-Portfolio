@@ -39,7 +39,7 @@ const Footer = () => {
           <h4 className=" text-base font-semibold text-center lg:text-start">Copy right 2024 | Frontend Developer -- Hossain Hasan Redoy</h4>
    </div>
       <div className="flex flex-col pt-6 lg:pt-0 ">
-       <h1 className=" text-xl font-semibold text-center mb-3 border-b border-gray-300"> My Social Links</h1>
+       <h1 className=" text-xl font-semibold text-center mb-3 border-b border-gray-300">Find me on</h1>
         <div className="flex justify-center space-x-4">
           <Link href={"https://www.linkedin.com/in/hossain-hasan-redoy/"}>
           <h3><FaLinkedin className="text-4xl "></FaLinkedin></h3>

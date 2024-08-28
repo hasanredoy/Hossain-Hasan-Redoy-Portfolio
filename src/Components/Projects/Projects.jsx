@@ -18,7 +18,7 @@ import 'swiper/css/free-mode';
 import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
 // import required modules
-import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
+import { FreeMode, Navigation, Thumbs,Autoplay, Pagination } from 'swiper/modules';
 // import projects css 
 import './projects.css';
 
@@ -37,16 +37,16 @@ const Projects = () => {
   const [projects,setProjects]=useState([]) 
   useEffect(()=>{
     setProjectsLoading(true)
-    axiosHook.get("/api/projects")
-    .then(res=>{
-      const projectsArr = res.data?.result
-      console.log(projectsArr);
-      setProjects(projectsArr)
+    fetch("/projects.json")
+    .then(res=>res.json())
+    .then(data=>{
+      console.log(data);
+      setProjects(data)
       setProjectsLoading(false)
     })
   },[])
 
-  const sortedProjects = projects.sort((project1,project2)=>project1?.projectId+project2?.projectId)
+  const sortedProjects = projects?.sort((project1,project2)=>project1?.projectId-project2?.projectId)
 console.log(sortedProjects);
   return (
     <div className=" mt-32 ">
@@ -62,17 +62,20 @@ console.log(sortedProjects);
 {/* swiper  */}
 
       <Swiper 
-        style={{
-          '--swiper-navigation-color': '#000',
-          '--swiper-pagination-color': '#000',
-        }}
-        spaceBetween={10}
-        navigation={true}
-        thumbs={{ swiper: thumbsSwiper }}
-        modules={[FreeMode, Navigation, Thumbs]}
-        className="mySwiper2  "
+          spaceBetween={30}
+          centeredSlides={true}
+          autoplay={{
+            delay: 3500,
+            disableOnInteraction: false,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Autoplay, Pagination, Navigation]}
+          className="mySwiper2"
       >
-     {isProjectsLoading||projects?.map((project,index) => {
+     {isProjectsLoading||sortedProjects?.map((project,index) => {
           return (
                  <SwiperSlide
                   onClick={setThumbsSwiper}

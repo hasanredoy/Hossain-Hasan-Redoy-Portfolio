@@ -15,11 +15,10 @@ const [isSkillsLoading, setSkillsLoading]=useState(true)
 const [skills,setSkills]=useState([]) 
   useEffect(()=>{
     setSkillsLoading(true)
-    axiosHook.get("/api/skills")
-    .then(res=>{
-    const skillsArr = res.data?.result
-    console.log(skillsArr);
-    setSkills(skillsArr)
+     fetch("/skills.json")
+     .then(res=>res.json())
+    .then(data=>{
+    setSkills(data)
     setSkillsLoading(false)
   })
   },[])

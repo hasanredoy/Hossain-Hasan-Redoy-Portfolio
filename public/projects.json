@@ -1,0 +1,88 @@
+[
+  {
+    "_id": "667fe52fdab8206e9ccc3a94",
+    "title": "Learn Mentor Gate _ online study application",
+    "image": "https://i.postimg.cc/WbdwfXJs/Screenshot-2024-06-29-001141.png",
+    "description": "Learn Mentor Gate is an online study website. Users can find various types of online courses. They can purchase their favorite courses by paying the course fee. Users can also request to become a teacher by completing a simple survey. If the admin approves the request, they will be considered a teacher on the website. Teachers can add classes from their dashboard, and if approved by the admin, they can also add assignments for specific classes. This website has an admin panel where admins can manage the site, approve classes, make users admins, and remove users, among other tasks.",
+    "techs": [
+      "HTML",
+      "CSS",
+      "Tailwind CSS",
+      "JavaScript",
+      "React JS",
+      "Firebase",
+      "Node JS",
+      "Express JS",
+      "MongoDB",
+      "JWT"
+    ],
+    "features": [
+      "User login, register, and logout",
+      "User role-based access",
+      "Teacher panel",
+      "Admin panel",
+      "Payment system",
+      "Pagination functionality",
+      "Feedback system"
+    ],
+    "live": "https://learn-mentor-gate.web.app/",
+    "clientRepo": "https://github.com/hasanredoy/Learn_Mentor_Gate_Client",
+    "serverRepo": "https://github.com/hasanredoy/Learn_Mentor_Gate_Server",
+    "projectId": 2
+  },
+  {
+    "_id": "667fe442dab8206e9ccc3a93",
+    "title": "Gadget Shop _ E-commerce application",
+    "image": "https://i.postimg.cc/Pr1Pxwgm/Screenshot-2024-06-29-135409.png",
+    "description": "Gadget Shop is an E-commerce website. In this website, users can find various types of gadgets and accessories. Users can search for their favorite gadgets, add them to their cart, and checkout after providing delivery information. This website has an admin panel where admins can manage the site by adding, removing, and updating gadgets and managing users. There is also a review system where users can provide feedback and see feedback from others.",
+    "techs": [
+      "HTML",
+      "CSS",
+      "Tailwind CSS",
+      "JavaScript",
+      "React JS",
+      "Firebase",
+      "Node JS",
+      "Express JS",
+      "MongoDB",
+      "JWT"
+    ],
+    "features": [
+      "User login, register and logout",
+      "User role-based access",
+      "Admin panel",
+      "Payment system",
+      "Pagination functionality",
+      "Search functionality",
+      "Feedback system"
+    ],
+    "live": "https://e-commerce-shop-88710.web.app/",
+    "clientRepo": "https://github.com/hasanredoy/E-commerce-Website-Client-Server-sides",
+    "serverRepo": null,
+    "projectId": 3
+  },
+  {
+    "_id": "668440e1db83536a82bd1513",
+    "title": "Poultry Hub- web application",
+    "image": "https://i.postimg.cc/13nxGy84/Screenshot-2024-08-27-214235.png",
+    "description": "Thrilled to share my latest project, Poultry Hub, a sleek and minimalist e-commerce web application designed for farmers and consumers alike. Poultry Hub offers a platform where farmers can sell fresh, farm-raised products such as chicken, eggs, feed, and more. Consumers can purchase high-quality, natural products directly from trusted farms, ensuring 100% farm-fresh goods. Additionally, Poultry Hub provides innovative AI-powered tools to help farmers build smarter farms or factories, enhancing productivity and sustainability. For those seeking assurance, our Reviews page offers genuine feedback from satisfied customers. Plus, customers can enjoy unlimited support whenever needed, ensuring a seamless experience.",
+    "techs": [
+      
+      "Tailwind CSS",
+      "JavaScript",
+      "Next JS",
+      "Node JS",
+      "Express JS",
+      "MongoDB"
+    ],
+    "features": [
+      "E-commerce Platform – Buy and sell fresh poultry products and farm supplies.",
+      "Product Hub AI – Smart AI-driven tools to help farmers optimize their operations.",
+      "Review System – Customer feedback that builds trust and transparency."
+    ],
+    "live": "https://poultry-hub-web-application.vercel.app/",
+    "clientRepo": "https://github.com/hasanredoy/Poultry_Hub_Web_Application",
+    "serverRepo": null,
+    "projectId": 1
+  }
+]

@@ -11,7 +11,7 @@ const Banner = () => {
      <h1 className=" text-2xl md:text-3xl font-black mb-5 lg:mb-10">Hi ,<br className=" hidden lg:block" /> I am a Frontend
       <span className=" ml-2 text-[#f98407] shadow-none lg:shadow-lg shadow-[#f984078e]"> Web Developer. </span></h1>
       {/* body  */}
-     <p className=" text-base md:text-lg lg:text-xl font-semibold   lg:max-w-xl">I am <span className=" font-bold ">Hossain Hasan Redoy</span> passionate Frontend Web Developer, love to create and develop eye catchy responsive website.</p>
+     <p className=" text-base md:text-lg  font-medium   lg:max-w-xl">I am <span className=" font-bold ">Hossain Hasan Redoy</span> passionate Frontend Web Developer, love to create and develop eye catchy responsive website.</p>
      <a className=" Btn-Primary mt-10 flex gap-5 items-center justify-center w-40" href="/Hossain-Hasan-Redoy-Resume.pdf" target="_blank" rel="noopener noreferrer" download ><FaDownload></FaDownload> Resume</a>
      </div>
      <div className="mx-auto lg:mx-0 text-end flex-1 flex  justify-end  ">
