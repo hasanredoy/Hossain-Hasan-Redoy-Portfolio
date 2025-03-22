@@ -79,13 +79,13 @@ const ContactMe = () => {
               <h4 className=" text-base font-bold flex items-center gap-3 ">
                 <FaPhoneAlt className=" text-xl"></FaPhoneAlt>{" "}
                 <span className=" hover:underline cursor-pointer ">
-                  +97156-4718381
+                  +8801898-927249
                 </span>
               </h4>
               <h4 className=" text-base font-bold flex items-center gap-3 mt-4 ">
                 <FaLocationDot className=" text-xl"></FaLocationDot>{" "}
                 <span className=" hover:underline cursor-pointer ">
-                  Abu Dhabi, United Arab Emirates.
+                  Sylhet, Bangladesh.
                 </span>
               </h4>
 
@@ -94,7 +94,7 @@ const ContactMe = () => {
               <Link href={"https://www.linkedin.com/in/hossain-hasan-redoy/"}>
           <h3><FaLinkedin className="text-4xl "></FaLinkedin></h3>
           </Link>
-          <Link href={"https://www.facebook.com/profile.php?id=61561249570802"}>
+          <Link href={"https://www.facebook.com/profile.php?id=61569174743813"}>
           <h3><FaFacebook className="text-4xl "></FaFacebook></h3>
           </Link>
               </div>

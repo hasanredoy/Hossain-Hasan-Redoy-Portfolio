@@ -1,9 +1,8 @@
 [
   {
-    "_id": "667fe52fdab8206e9ccc3a94",
     "title": "Learn Mentor Gate _ online study application",
     "image": "https://i.postimg.cc/WbdwfXJs/Screenshot-2024-06-29-001141.png",
-    "description": "Learn Mentor Gate is an online study website. Users can find various types of online courses. They can purchase their favorite courses by paying the course fee. Users can also request to become a teacher by completing a simple survey. If the admin approves the request, they will be considered a teacher on the website. Teachers can add classes from their dashboard, and if approved by the admin, they can also add assignments for specific classes. This website has an admin panel where admins can manage the site, approve classes, make users admins, and remove users, among other tasks.",
+    "description": " 🚀 Learn Mentor Gate is an online study website. Users can find various types of online courses. They can purchase their favorite courses by paying the course fee. Users can also request to become a teacher by completing a simple survey. If the admin approves the request, they will be considered a teacher on the website. Teachers can add classes from their dashboard, and if approved by the admin, they can also add assignments for specific classes. This website has an admin panel where admins can manage the site, approve classes, make users admins, and remove users, among other tasks.",
     "techs": [
       "HTML",
       "CSS",
@@ -28,13 +27,12 @@
     "live": "https://learn-mentor-gate.web.app/",
     "clientRepo": "https://github.com/hasanredoy/Learn_Mentor_Gate_Client",
     "serverRepo": "https://github.com/hasanredoy/Learn_Mentor_Gate_Server",
-    "projectId": 2
+    "projectId": 3
   },
   {
-    "_id": "667fe442dab8206e9ccc3a93",
     "title": "Gadget Shop _ E-commerce application",
     "image": "https://i.postimg.cc/Pr1Pxwgm/Screenshot-2024-06-29-135409.png",
-    "description": "Gadget Shop is an E-commerce website. In this website, users can find various types of gadgets and accessories. Users can search for their favorite gadgets, add them to their cart, and checkout after providing delivery information. This website has an admin panel where admins can manage the site by adding, removing, and updating gadgets and managing users. There is also a review system where users can provide feedback and see feedback from others.",
+    "description": " 🚀 Gadget Shop is an E-commerce website. In this website, users can find various types of gadgets and accessories. Users can search for their favorite gadgets, add them to their cart, and checkout after providing delivery information. This website has an admin panel where admins can manage the site by adding, removing, and updating gadgets and managing users. There is also a review system where users can provide feedback and see feedback from others.",
     "techs": [
       "HTML",
       "CSS",
@@ -59,15 +57,13 @@
     "live": "https://e-commerce-shop-88710.web.app/",
     "clientRepo": "https://github.com/hasanredoy/E-commerce-Website-Client-Server-sides",
     "serverRepo": null,
-    "projectId": 3
+    "projectId": 4
   },
   {
-    "_id": "668440e1db83536a82bd1513",
     "title": "Poultry Hub- web application",
     "image": "https://i.postimg.cc/13nxGy84/Screenshot-2024-08-27-214235.png",
-    "description": "Thrilled to share my latest project, Poultry Hub, a sleek and minimalist e-commerce web application designed for farmers and consumers alike. Poultry Hub offers a platform where farmers can sell fresh, farm-raised products such as chicken, eggs, feed, and more. Consumers can purchase high-quality, natural products directly from trusted farms, ensuring 100% farm-fresh goods. Additionally, Poultry Hub provides innovative AI-powered tools to help farmers build smarter farms or factories, enhancing productivity and sustainability. For those seeking assurance, our Reviews page offers genuine feedback from satisfied customers. Plus, customers can enjoy unlimited support whenever needed, ensuring a seamless experience.",
+    "description": " 🚀 Thrilled to share my latest project, Poultry Hub, a sleek and minimalist e-commerce web application designed for farmers and consumers alike. Poultry Hub offers a platform where farmers can sell fresh, farm-raised products such as chicken, eggs, feed, and more. Consumers can purchase high-quality, natural products directly from trusted farms, ensuring 100% farm-fresh goods. Additionally, Poultry Hub provides innovative AI-powered tools to help farmers build smarter farms or factories, enhancing productivity and sustainability. For those seeking assurance, our Reviews page offers genuine feedback from satisfied customers. Plus, customers can enjoy unlimited support whenever needed, ensuring a seamless experience.",
     "techs": [
-      
       "Tailwind CSS",
       "JavaScript",
       "Next JS",
@@ -82,6 +78,30 @@
     ],
     "live": "https://poultry-hub-web-application.vercel.app/",
     "clientRepo": "https://github.com/hasanredoy/Poultry_Hub_Web_Application",
+    "serverRepo": null,
+    "projectId": 2
+  },
+  {
+    "title": "Travel Vista Web Application",
+    "image": "https://i.postimg.cc/pXmkdQPS/Screenshot-2025-03-22-170455.png",
+    "description": "🌍 Excited to Introduce Travel Vista!Travel Vista, a platform designed for travel enthusiasts, bloggers, and adventurers! 🏔️✈️Travel Vista is an all-in-one web application that brings together travel, tourism, blogging, hosting, and user profiles in a seamless experience. Whether you're an explorer looking for your next adventure or a storyteller eager to share your journey, this platform has got you covered.",
+    "techs": [
+      "Tailwind CSS",
+      "JavaScript",
+      "Next JS",
+      "Node JS",
+      "Express JS",
+      "MongoDB"
+    ],
+    "features": [
+      "Discover & Explore : Browse stunning travel destinations and plan your next trip.",
+      "Blogging Platform: Share your travel experiences, insights, and tips with the community.",
+      "Hosting Services: Offer stays, experiences, or guides for fellow travelers.",
+      " User Profiles: Track your travel history, blog engagements, and connect with like-minded travelers.",
+      "Interactive Features: Engage with travel content, leave reviews, and get inspired by others' experiences."
+    ],
+    "live": "https://travel-vista-web-application.vercel.app/",
+    "clientRepo": "https://github.com/hasanredoy/travel-vista-web-application",
     "serverRepo": null,
     "projectId": 1
   }

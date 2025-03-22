@@ -84,19 +84,19 @@ html {
 
 @media only screen and (max-width: 600px) {
   .Btn-Primary {
-    background-color: #018001;
+    background-color: #f98407;
     color: white;
-    padding: 10px 15px;
-    font-size: 15px;
+    padding: 10px 13px;
+    font-size: 12px;
     font-weight: 700;
     border-radius: 10px;
     
   }
   .Btn-Primary:hover {
     background-color: #f8eaea;
-    color: rgb(4, 171, 7);
-    padding: 10px 15px;
-    font-size: 15px;
+    color: #f98407;
+    padding: 10px 13px;
+    font-size: 12px;
     font-weight: 700;
     border-radius: 10px;
     transition: all 0.2s;
@@ -106,7 +106,7 @@ html {
     background-color: #131413;
     color: white;
     padding: 10px 15px;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 700;
     border-radius: 10px;
     
@@ -115,7 +115,7 @@ html {
     background-color: #ebe1e1;
     color: rgb(13, 13, 13);
     padding: 10px 15px;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 700;
     border-radius: 10px;
     transition: all 0.2s;

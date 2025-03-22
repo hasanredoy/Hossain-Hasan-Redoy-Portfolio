@@ -47,7 +47,7 @@ const Footer = () => {
           <Link href={"https://github.com/hasanredoy"}>
           <h3><FaGithub className="text-4xl "></FaGithub></h3>
           </Link>
-          <Link href={"https://www.facebook.com/profile.php?id=61561249570802"}>
+          <Link href={"https://www.facebook.com/profile.php?id=61569174743813"}>
           <h3><FaFacebook className="text-4xl "></FaFacebook></h3>
           </Link>
         </div>

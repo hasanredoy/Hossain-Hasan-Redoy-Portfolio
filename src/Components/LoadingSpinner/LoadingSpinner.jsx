@@ -1,5 +1,5 @@
 import Image from "next/image";
-import spinner from "../../../public/image_processing20201002-7921-15nuf6k.gif"
+import spinner from "../../../public/output-onlinegiftools (4).gif"
 
 const LoadingSpinner = () => {
   return  <div className=' flex justify-center items-end  '>

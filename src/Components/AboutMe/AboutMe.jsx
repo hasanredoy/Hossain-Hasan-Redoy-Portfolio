@@ -1,7 +1,8 @@
+
 import Link from "next/link";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 const AboutMe = () => {
+
   return (
     <div className=" mt-32  ">
       {/* about me text div  */}
@@ -19,7 +20,7 @@ const AboutMe = () => {
             successfully create and deploy some full stack websites using
             technologies like{" "}
             <span className=" font-bold">
-              HTML, CSS, TailwindCSS, JavaScript, ReactJS, NodeJS, ExpressJS,
+              HTML, CSS, TailwindCSS, JavaScript, ReactJS, NextJS, NodeJS, ExpressJS,
               and MongoDB.
             </span>
           </h4>

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import hhrdoy from "../../../public/hh-redoy.png"
+import hhrdoy from "../../../public/redoy.png"
 import { FaDownload } from "react-icons/fa6";
 
 const Banner = () => {
@@ -15,7 +15,7 @@ const Banner = () => {
      <a className=" Btn-Primary mt-10 flex gap-5 items-center justify-center w-40" href="/Hossain-Hasan-Redoy-Resume.pdf" target="_blank" rel="noopener noreferrer" download ><FaDownload></FaDownload> Resume</a>
      </div>
      <div className="mx-auto lg:mx-0 text-end flex-1 flex  justify-end  ">
-      <Image className=" border rounded-full border-[#f984079e] p-2  w-56 h-56 lg:w-[300px] lg:h-[310px]  xl:h-[350px] xl:w-[350px] transition-all delay-150"  src={hhrdoy} width={400} height={400} alt="Hossain Hasan Redoy-image"></Image>
+      <Image className=" border rounded-full border-[#f984079e] p-2  w-56 h-56 lg:w-[300px] lg:h-[310px]  xl:h-[350px] xl:w-[330px] transition-all delay-150"  src={hhrdoy} width={400} height={400} alt="Hossain Hasan Redoy-image"></Image>
      </div>
     </div>
   );
